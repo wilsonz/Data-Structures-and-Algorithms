@@ -1,2 +1,2 @@
-# data-structures-and-algorithms
+# Data Structures and Algorithms
 # Implementation of data structure and algorithms in python
