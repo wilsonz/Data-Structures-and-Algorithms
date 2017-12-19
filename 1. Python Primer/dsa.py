@@ -40,5 +40,6 @@ def scale(data, factor):
     for j in range(len(data)):
         data[j] *= factor
 
-
+# open a file
+# open(), return a proxy for interactions with the underlying file
 
