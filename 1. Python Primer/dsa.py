@@ -53,3 +53,51 @@ def scale(data, factor):
 
 # iterable
 # an object, obj, that produces an iterator via the syntax iter (obj).
+
+# the for-loop syntax in Python simply automate the iteration process,
+# creating an iterator for the give iterable, and then repeatedly calling
+# for the next element until catching the StopIteration exception
+
+# Python also supports functions and classes that produce an implicit
+# implicit iterable series of values, that is, without constructing a
+# data structure to store all of its values at once.
+# For example, range(10000), does NOT return a list of numbers;
+# it returns a range object that is iterable.
+
+# generator
+# use yield, instead of return, and not both
+# the results are only computed if requested,
+# and the entire series need not reside in memory at one time.
+
+# Conditional expression
+# itself can serve as a parameter to the function
+result = foo(n if n >= 0 else -n)
+
+# Comprehension syntax
+#
+# list comprehension
+squares = [k*k for k in range(1, n+1)]
+# set comprehension
+{ k*k for k in range(1, n+1) }
+
+# generator comprehension
+( k*k for k in range(1, n+1) )
+
+# dictionary comprehension
+{k: k*k for k in range(1, n+1) }
+
+
+##
+# If a series of comma-separated expressions are given in a larger context,
+# they will be treated as a single tuple, even if no enclosing parentheses
+data = 2,3,4,6,8
+# assigned tuple(2,3,4,6,8)
+# this is called automatic packing of tuple
+
+##
+# simultaneous assignments
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a+b
