@@ -43,3 +43,13 @@ def scale(data, factor):
 # open a file
 # open(), return a proxy for interactions with the underlying file
 
+###################################################################
+# 1.7 Exception Handling
+# to be continued
+
+#####################################################################
+# iterator
+# an object that manages an iteration through a series of values.
+
+# iterable
+# an object, obj, that produces an iterator via the syntax iter (obj).
