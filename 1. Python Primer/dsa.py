@@ -20,4 +20,10 @@ for j in range(len(data)):
     if data[j] > data[big_index]:
         big_index = j
 
-#
+# add a function
+def count (data, target):
+    n = 0
+    for item in data:
+        if item == target:  # found a match
+            n += 1
+    return n
